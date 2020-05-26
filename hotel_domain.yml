@@ -1,0 +1,48 @@
+slots:
+  ruangan:
+    type: text
+  benda:
+    type: text
+  person:
+    type: text
+  extra:
+    type: text
+  room:
+    type: text
+intens:
+  - greet
+  - thanks
+  - inform_extra
+  - inform_complain
+  - inform_room
+  - inform_service
+
+entities:
+  - ruangan
+  - benda
+  - person
+  - extra
+  - room
+
+templates:
+  utter_greet:
+    - text: "selamat datang"
+  utter_thanks:
+    - 'Terimakasih'
+    - 'baik'
+  utter_ask_room:
+    - 'boleh saya tahu ada di kamar berapa?'
+  utter_unclear:
+    - 'Maaf saya tidak ngerti, bisa diulangi pertanyaannya?'
+  utter_wait:
+    - 'tunggu sebentar, akan diproses'
+#  utter_extra:
+#    - 'baik extra yang diminta sudah diproses, ditunggu permintaanya'
+#  utter_complain:
+#    - 'baik, mohon maaf atas tidak keyamanan anda. bell boy hotel akan menuju kamar anda'
+
+actions:
+  - utter_greet
+  - utter_thanks
+  - utter_ask_location
+  - utter_unclear
